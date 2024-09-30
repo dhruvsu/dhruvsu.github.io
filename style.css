@@ -1,0 +1,70 @@
+body {
+  padding-left: 2vw;
+  background-color: white;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topnav {
+  font-size: 4vh;
+  padding-left: 2vw;
+  text-align: left;
+}
+
+.pages {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 3vh;
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.isapagelink {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  background-color: blue;
+  height: 45vh;
+  width: 45vw;
+  margin-right: 3vw;
+}
+
+.sportpagelink {
+  float:left;
+  background-color: red;
+  height: 45vh;
+  width: 45vw;
+  /* margin-left: 5vw; */
+}
+
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .topnav {
+    padding-left: 0vh;
+    text-align: center;
+  }
+}
